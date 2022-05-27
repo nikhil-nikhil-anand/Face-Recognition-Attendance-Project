@@ -11,7 +11,7 @@ face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 
 name=input("Enter your name: ")
-if not os.path.exists("Dataset/train/" + name):
+if not os.path.exists("Datasets/train/" + name):
     os.mkdir("Datasets/train/" + name)
 else:
     print("Directory already exists")
