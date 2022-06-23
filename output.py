@@ -25,7 +25,7 @@ conn = psycopg2.connect(
 host="localhost",
 database="Student_Data",
 user="postgres",
-password="Nikhil37")
+password="********")
 print ("Opened database successfully")
 
 known_faces = []
