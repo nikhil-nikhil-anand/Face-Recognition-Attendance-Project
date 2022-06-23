@@ -15,7 +15,7 @@ count = 0
 
 get="get_student_details"
 rollno=input("Enter your roll_no: ")
-url="http://1.6.113.224/?action=" + get + "&rollno=" + rollno
+url="apiurl=" + get + "&rollno=" + rollno
 
 response = requests.get(url)
 parse_data = json.loads(response.text)
@@ -45,7 +45,7 @@ conn = psycopg2.connect(
 host="localhost",
 database="Student_Data",
 user="postgres",
-password="Nikhil37")
+password="********")
 print ("Opened database successfully")
 
 cur = conn.cursor()
